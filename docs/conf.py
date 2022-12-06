@@ -138,7 +138,7 @@ html_show_copyright = True
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 html_logo = '_static/buyutech.png'
-html_favicon = '_static/favicon.ico'
+html_favicon = '_static/buyutech.png'
 html_theme_options = {
   'logo_only': False,
   'display_version': True,
