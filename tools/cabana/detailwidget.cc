@@ -316,6 +316,12 @@ WelcomeWidget::WelcomeWidget(QWidget *parent) : QWidget(parent) {
   QLabel *logo = new QLabel("CABANA");
   logo->setAlignment(Qt::AlignCenter);
   logo->setStyleSheet("font-size:50px;font-weight:bold;");
+  
+  QPixmap pixmap("./logo.png");
+  logo.setPixmap(pixmap);
+  logo.setMask(pixmap.mask());
+  logo.show();
+  
   main_layout->addWidget(logo);
 
   auto newShortcutRow = [](const QString &title, const QString &key) {
